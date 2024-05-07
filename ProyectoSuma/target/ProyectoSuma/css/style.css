@@ -1,0 +1,49 @@
+/**
+Hoja de estilo del proyecto
+ */
+body{
+    background-color: gold;
+    height: 100vh;
+}
+.texto-centrado{
+    text-align: center;
+}
+.margen-top-100{
+    margin-top:100px;
+}
+
+input{
+    padding: 15px;
+}
+.material-symbols-rounded {
+    font-size: 50px;
+    color: orangered;
+}
+.header{
+    height: 50px;
+}
+.color-naranja{
+    background-color: orangered;
+}
+.color-amarillo{
+    color:gold;
+}
+
+.caja-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
