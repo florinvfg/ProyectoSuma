@@ -25,7 +25,48 @@ console.log("sinInicializar: "+typeof(sinInicializar));
 console.log("nulo: "+typeof(nulo));
 console.log("gigante: "+typeof(gigante));
 
+console.error("Este es un error");
+console.info("Esta es una informacion");
+console.warn("Esta es una atencion");
+
+
 var numero=37;
 var cadena="54";
 //Asi convertimos manualmente la cadena de caracteres "54" en el numero 54
 var suma=numero+Number(cadena);
+/* Mensaje de confirmacion*/
+let mensaje="Estas seguro de tu seleccion?";
+let respuestaN=confirm(mensaje);
+console.log("La respuesta del usuario es "+respuestaN);
+/*Mensaje de entrada*/
+let mensajeImput="Para eliminar escriba ELIMINAR";
+let respuestaImput=prompt(mensajeImput);
+console.log("El usuario ha escrito "+respuestaImput);
+/* Mensaje de Alerta*/
+alert("Este es un mensaje de alerta");
+function mostrarNumeros() {
+     sumando1=document.querySelector("#sumando1");
+     sumando2=document.querySelector("#sumando2");
+     sumando1.value=parseInt(Math.random()*100+1);
+    sumando2.value=parseInt(Math.random()*100+1);
+    sumaCorrecta=Number(sumando1.value)+Number(sumando2.value);
+
+}
+
+let  contadorC=0;
+let contadorI=0;
+let respuesta=document.querySelector("#resultado");
+respuesta.addEventListener("change",(event) => {
+    console.log(typeof (respuesta.value));
+    if (sumaCorrecta === Number(respuesta.value)) {
+        contadorC++;
+        mostrarNumeros();
+    } else {
+        contadorI++;
+        mostrarNumeros();
+    }
+    respuesta.value="";
+    document.querySelector("#correcta").innerHTML=contadorC;
+    document.querySelector("#incorrecta").innerHTML=contadorI;
+
+});

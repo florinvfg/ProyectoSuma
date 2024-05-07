@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="mostrarNumeros()">
     <header>
         <div class="header color-naranja col-12 caja-flex">
 
@@ -60,12 +60,19 @@ thumb_up
 thumb_down
 </span>
     </p>
+        <p>
+
+            <span id="correcta"></span>
+            <span id="incorrecta"></span>
+
+        </p>
 
     </div>
 <footer class="color-naranja col-12 caja-flex" >
     <span class="material-symbols-rounded color-amarillo">
 exit_to_app
 </span>
+
 
 
 </footer>
