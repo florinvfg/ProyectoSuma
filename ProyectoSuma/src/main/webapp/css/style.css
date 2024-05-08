@@ -2,7 +2,7 @@
 Hoja de estilo del proyecto
  */
 body{
-    background-color: gold;
+    background-color: #0077ff;
     height: 100vh;
 }
 .texto-centrado{
@@ -17,13 +17,13 @@ input{
 }
 .material-symbols-rounded {
     font-size: 50px;
-    color: orangered;
+    color: #857a81;
 }
 .header{
     height: 50px;
 }
 .color-naranja{
-    background-color: orangered;
+    background-color: #540655;
 }
 .color-amarillo{
     color:gold;
@@ -45,5 +45,18 @@ footer{
     font-weight: 400;
     font-style: normal;
 }
-
-
+.correcta{
+    color: darkgreen;
+}
+.incorrecta{
+    color: red;
+}
+img{
+    width: 200px;
+}
+.autor{
+    text-align: center;
+}
+.redondo{
+    border-radius: 50%;
+}
